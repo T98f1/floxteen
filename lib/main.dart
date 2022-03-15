@@ -1,6 +1,9 @@
+
 import 'package:flutter/material.dart';
 
 import 'Home.dart';
+import 'Register.dart';
+import 'log in.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,12 +20,19 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
         primarySwatch: Colors.red,
-        fontFamily: "Roboto"
+        //fontFamily: "Roboto"
       ),
       initialRoute: " / ",
       routes:{
         "/": (context) => Home(),
+        "/login": (context) => login(),
+        "/register": (context) =>Register(),
+
+
       } ,
+
+
+
 
     );
   }
