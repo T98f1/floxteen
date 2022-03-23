@@ -1,4 +1,7 @@
 
+import 'package:floxteen/Item%20menu.dart';
+import 'package:floxteen/My%20Cart.dart';
+import 'package:floxteen/notifiacations.dart';
 import 'package:flutter/material.dart';
 
 import 'Home.dart';
@@ -15,11 +18,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return
+      MaterialApp(
       title: 'Floxteen Demo',
       theme: ThemeData(
-
-        primarySwatch: Colors.red,
+fontFamily: "Roboto",
+        primarySwatch: Colors.deepPurple
         //fontFamily: "Roboto"
       ),
       initialRoute: " / ",
@@ -27,6 +31,9 @@ class MyApp extends StatelessWidget {
         "/": (context) => Home(),
         "/login": (context) => login(),
         "/register": (context) =>Register(),
+        "/Item menu": (context) =>ItemMenu(),
+        "/MyCart": (context) =>MyCart(),
+        "/notifiacations": (context) =>notifiacations(),
 
 
       } ,
